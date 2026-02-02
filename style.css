@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue";
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background: white;
+
+  padding: 40px;
+  gap: 5px;
+
+  grid-template-rows: 0.16fr 0.7fr 0.5fr 0.5fr;
+  grid-template-columns: 0.5fr 1.5fr 1fr 0.5fr 0.5fr;
+
+  grid-template-areas:
+    "nav-homepage nav-menus nav-menus nav-menus nav-menu-icon"
+    "complete-guide complete-guide your-profile wallet wallet"
+    "growth-chart growth-chart blog-introduction blog-introduction blog-introduction"
+    "growth-chart growth-chart most-popular good-seo good-seo";
+}
+
+#nav-homepage {
+  background: royalblue;
+  border: 2px solid white;
+  grid-area: nav-homepage;
+  border-radius: 80px;
+}
+
+#nav-menus {
+  background: purple;
+  border: 2px solid white;
+  grid-area: nav-menus;
+  border-radius: 80px;
+}
+
+#nav-menu-icon {
+  background: teal;
+  border: 2px solid white;
+  grid-area: nav-menu-icon;
+  border-radius: 80px;
+}
+
+#complete-guide {
+  background: tomato;
+  border: 2px solid white;
+  grid-area: complete-guide;
+  border-radius: 40px;
+}
+
+#your-profile {
+  background: gold;
+  border: 2px solid white;
+  grid-area: your-profile;
+  border-radius: 40px;
+}
+
+#wallet {
+  background: limegreen;
+  border: 2px solid white;
+  grid-area: wallet;
+  border-radius: 40px;
+  clip-path: polygon(
+    35% 7%,
+    65% 7%,
+    70% 0,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 0,
+    30% 0
+  );
+}
+
+#growth-chart {
+  background: orange;
+  border: 2px solid white;
+  grid-area: growth-chart;
+  border-radius: 40px;
+}
+
+#blog-introduction {
+  background: salmon;
+  border: 2px solid white;
+  grid-area: blog-introduction;
+  border-radius: 40px;
+}
+
+#most-popular {
+  background: rosybrown;
+  border: 2px solid white;
+  grid-area: most-popular;
+  border-radius: 40px;
+}
+
+#good-seo {
+  background: lightseagreen;
+  border: 2px solid white;
+  grid-area: good-seo;
+  border-radius: 40px;
+}

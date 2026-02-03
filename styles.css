@@ -518,6 +518,7 @@ h5 {
 
 #blog-introduction {
   background: white;
+  border: 5px solid lightgray;
   grid-area: blog-introduction;
   border-radius: 40px;
   display: flex;
@@ -526,7 +527,6 @@ h5 {
   overflow: hidden;
   padding: 10px;
   justify-content: space-between;
-  border: 2px solid black;
 }
 
 #blog-introduction .top {
@@ -672,7 +672,7 @@ h5 {
   grid-area: good-seo;
   border-radius: 40px;
   padding: 40px;
-  border: 2px solid black;
+  border: 5px solid lightgray;
   display: flex;
   flex-direction: column;
   gap: 40px;
